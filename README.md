@@ -45,7 +45,7 @@ echo "PORT=3000" >> .env
 # Start the server
 npm start
 ```
-Replace <repository_url> with the URL of the Git repository and <project_directory> with the name of the project directory where you cloned the repository. Additionally, replace your_openai_api_key_here with your actual OpenAI API key.
+Replace your_openai_api_key_here with your actual OpenAI API key.
 
 
 ## Contributing:
