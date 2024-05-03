@@ -21,37 +21,35 @@ POST /upload: Accepts the uploaded CV, job description, job title, and company n
 
 ## Commands:
 ```bash
-    npm install: Install dependencies.
-    npm start: Start the server.
-    npm test: Run tests.
+npm install: Install dependencies.
+npm start: Start the server.
+npm test: Run tests.
 ```
 ## Usage:
 Clone the repository.
 Install dependencies using npm install.
 Create a .env file in the root directory with the following ontent:
 ```bash
-   
-    # Clone the repository
-    git clone https://github.com/Anirudhxx/cv-screening.git
+# Clone the repository
+git clone https://github.com/Anirudhxx/cv-screening.git
 
-    # Navigate to the project directory
-    cd cv-screening
+# Navigate to the project directory
+cd cv-screening
 
-    # Install dependencies
-    npm install
+# Install dependencies
+npm install
 
-    # Create a .env file with OpenAI API key and port configuration
-    echo "OPENAI_API_KEY=your_openai_api_key_here" > .env
-    echo "PORT=3000" >> .env
-
-    # Start the server
-    npm start
+# Create a .env file with OpenAI API key and port configuration
+echo "OPENAI_API_KEY=your_openai_api_key_here" > .env
+echo "PORT=3000" >> .env
+# Start the server
+npm start
 ```
 Replace <repository_url> with the URL of the Git repository and <project_directory> with the name of the project directory where you cloned the repository. Additionally, replace your_openai_api_key_here with your actual OpenAI API key.
 
 
 ## Contributing:
-    Feel free to contribute to this project by submitting bug reports, feature requests, or pull requests.
+Feel free to contribute to this project by submitting bug reports, feature requests, or pull requests.
 
 ## License:
-    This project is licensed under the ISC License.
+This project is licensed under the ISC License.
