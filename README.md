@@ -47,6 +47,22 @@ npm start
 ```
 Replace your_openai_api_key_here with your actual OpenAI API key.
 
+## Docker Image
+Before running the Docker image, ensure that you have Docker installed on your system. You can download and install Docker from the official website: https://www.docker.com/get-started Usage
+
+To download and run the chat server Docker image, follow these steps:
+
+Download the Docker image:
+
+```bash
+docker pull anirudhchauhan10/ai-screening-app:latest
+```
+
+Run the Docker container:
+```bash
+docker run -d -p 3000:3000 anirudhchauhan10/ai-screening-app:latest
+```
+This command will start the chat server container in detached mode (-d) and map port 3000 on the host to port 3000 in the container.
 
 ## Contributing:
 Feel free to contribute to this project by submitting bug reports, feature requests, or pull requests.
