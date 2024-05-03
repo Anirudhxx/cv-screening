@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Screening App</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="heading">AI Screening</h1>
+    <form id="uploadForm" action="/upload" method="post" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="cv">Upload Candidate's CV (PDF)</label>
+        <input type="file" id="cv" name="cv" accept=".pdf">
+      </div>
+  
+      <div class="form-group">
+        <label for="jobDescription">Upload Job Description (PDF)</label>
+        <input type="file" id="jobDescription" name="jobDescription" accept=".pdf">
+      </div>
+  
+      <div class="form-group">
+        <label for="jobTitle">Job Title</label>
+        <input type="text" id="jobTitle" name="jobTitle" placeholder="Enter Job Title">
+      </div>
+  
+      <div class="form-group">
+        <label for="companyName">Company Name</label>
+        <input type="text" id="companyName" name="companyName" placeholder="Enter Company Name">
+      </div>
+  
+      <button type="submit" class="btn">Evaluate Fit</button>
+    </form>
+    <div id="scoreContainer" class="message"></div>
+  </div>
+
+  <script>
+    // JavaScript code for handling form submission and displaying feedback messages
+    const form = document.getElementById('uploadForm');
+    const scoreContainer = document.getElementById('scoreContainer');
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      
+      // Display loading message
+      scoreContainer.innerHTML = 'Processing...';
+
+      const formData = new FormData(form);
+
+      try {
+        const response = await fetch('/upload', {
+          method: 'POST',
+          body: formData
+        });
+        const html = await response.text();
+
+        // Display the HTML response
+        scoreContainer.innerHTML = html;
+      } catch (error) {
+        // For error message
+        scoreContainer.innerHTML = `<p class="error">${error.message}</p>`;
+      }
+    });
+  </script>
+</body>
+</html>

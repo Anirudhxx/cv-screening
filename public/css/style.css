@@ -1,0 +1,106 @@
+/* CSS styles for AI Screening App */
+
+/* Body styles */
+body {
+  font-family: 'Roboto', sans-serif; /* Main font */
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5; /* Light background */
+  color: #333; /* Main text color */
+}
+
+/* Container styles */
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff; /* White container background */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+h1, h2 {
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif; /* Heading font */
+  color: #333; /* Dark text color */
+}
+
+/* Form group styles */
+.form-group {
+  margin-bottom: 25px;
+}
+
+/* Label styles */
+label {
+  font-weight: bold;
+}
+
+/* Input styles */
+input[type="text"],
+input[type="file"] {
+  width: calc(100% - 20px);
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #f9f9f9; /* Light input background */
+  color: #555; /* Medium text color */
+}
+
+/* Button styles */
+.btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff; /* Primary button color */
+  color: #fff; /* Button text color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Darker hover color */
+}
+
+/* Message container styles */
+.message {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+/* Success message styles */
+.success {
+  background-color: #d4edda; /* Success message background color */
+  color: #155724; /* Success message text color */
+}
+
+/* Error message styles */
+.error {
+  background-color: #f8d7da; /* Error message background color */
+  color: #721c24; /* Error message text color */
+}
+
+/* Logo styles */
+.logo {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto 30px;
+}
+
+/* Footer styles */
+.footer {
+  text-align: center;
+  margin-top: 50px;
+  color: #777; /* Footer text color */
+}
+
+/* Icon styles */
+.icon {
+  margin-right: 10px;
+  vertical-align: middle;
+}
